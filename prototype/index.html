@@ -12,7 +12,15 @@
         <form id="task-form">
             <input type="text" id="task-title" placeholder="任务标题" required />
             <textarea id="task-desc" placeholder="任务描述"></textarea>
-            <input type="date" id="task-deadline" required />
+            <div class="form-row">
+                <select id="task-priority" required>
+                    <option value="" disabled selected>选择优先级</option>
+                    <option value="high">高</option>
+                    <option value="medium">中</option>
+                    <option value="low">低</option>
+                </select>
+                <input type="date" id="task-deadline" required />
+            </div>
             <button type="submit">添加任务</button>
         </form>
         <div class="task-list" id="task-list"></div>
