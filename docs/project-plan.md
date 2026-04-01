@@ -1,20 +1,42 @@
-# Project Plan
+# 个人任务管理工具 - 项目计划
 
-## Introduction
-This document outlines the project plan, its objectives, and a timeline for completion.
+## 1. 项目概述
 
-## Objectives
-- Define project goals
-- Outline project deliverables
-- Establish a timeline
+### 1.1 项目背景
+在日常学习和工作中，个人需要管理多项任务，传统纸质或简单记事本无法有效追踪任务状态和优先级。本项目旨在开发一个轻量级的个人任务管理工具，帮助用户高效管理日常任务。
 
-## Timeline
-- **Phase 1**: Research (April 2026)
-- **Phase 2**: Development (May 2026)
-- **Phase 3**: Testing (June 2026)
-- **Phase 4**: Deployment (July 2026)
+### 1.2 项目目标
+- 实现任务的基本增删改查功能
+- 支持任务状态管理和优先级设置
+- 提供智能化的任务建议（基于Agent特性）
+- 通过GitHub进行完整的项目管理实践
 
-## Deliverables
-1. Project Plan Document
-2. Prototype
-3. Final Report
+### 1.3 项目范围
+本项目为个人作业，聚焦前端原型开发，使用localStorage模拟数据持久化，不涉及后端服务。
+
+## 2. 需求分析
+
+### 2.1 功能需求
+
+| 编号 | 功能模块 | 需求描述 | 优先级 | 迭代 |
+|------|---------|---------|--------|------|
+| FR-01 | 任务列表 | 展示所有任务，包含标题、优先级、状态、截止日期 | 高 | Sprint1 |
+| FR-02 | 添加任务 | 表单输入任务信息，提交后添加到列表 | 高 | Sprint1 |
+| FR-03 | 删除任务 | 每个任务带删除按钮，点击后移除 | 中 | Sprint1 |
+| FR-04 | 状态切换 | 支持将任务状态在三种状态间切换 | 高 | Sprint2 |
+| FR-05 | 优先级设置 | 任务创建时可选择高/中/低优先级 | 中 | Sprint2 |
+| FR-06 | 排序功能 | 支持按优先级排序任务列表 | 低 | Sprint2 |
+| FR-07 | AI建议 | 模拟AI助手，根据任务紧急程度给出建议 | 中 | Sprint3 |
+
+## 3. 进度计划
+| 阶段 | 任务 | 产出 |
+|------|------|------|
+| 阶段一 | 需求分析、文档撰写 | 项目计划文档 |
+| 阶段二 | Sprint 1 & 2 开发 | 基础功能原型与交互优化 |
+| 阶段三 | Sprint 3 开发 | 增加Agent辅助功能 |
+| 阶段四 | 部署与文档整理 | 最终提交物 |
+
+## 4. 技术选型
+- HTML5 / CSS3 / JavaScript (Vanilla)
+- localStorage (用于模拟持久化数据存储)
+- GitHub (用于代码托管及项目管理)
