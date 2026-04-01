@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - 个人任务管理工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>TaskFlow 任务管理</h1>
+        </header>
+
+        <!-- 添加任务表单 -->
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="任务标题" required />
+            <textarea id="task-desc" placeholder="任务描述"></textarea>
+            
+            <div class="form-row">
+                <select id="task-priority" required>
+                    <option value="" disabled selected>选择优先级</option>
+                    <option value="high">高优先级</option>
+                    <option value="medium">中优先级</option>
+                    <option value="low">低优先级</option>
+                </select>
+                <input type="date" id="task-deadline" required />
+            </div>
+
+            <button type="submit">添加任务</button>
+        </form>
+
+        <!-- 任务列表 -->
+        <div class="task-list" id="task-list">
+            <!-- 任务卡片将由 JS 动态生成 -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
